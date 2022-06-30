@@ -1,0 +1,12 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="hh.demo" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<l:VerticalLayout id="idLayout" binding="{demo>/Student}" > 
+       <Text text="hi"/>
+      <Text text="{demo>name}"/>    
+      <Text text="{demo>/phone}"/>
+</l:VerticalLayout >
+		</content>
+	</Page>
+</core:View>

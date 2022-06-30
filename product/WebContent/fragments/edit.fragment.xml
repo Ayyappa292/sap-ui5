@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	controllerName="product.controllers.mainview"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog>
+		<f:SimpleForm id="sform" maxContainerCols="2"
+			layout="ResponsiveGridLayout" labelSpanL="2" labelSpanM="2"
+			emptySpanL="0" columnsL="1" columnsM="1">
+			<f:content>
+				<Label text="Product ID" required="true"/>
+					<Input id="pid1" width="40%" value=""/>
+				<Label text="Product Name" required="true"/>
+					<Input id="pn1" width="40%" value=""/>
+				<Label text="Product Image" required="true"/>
+					<Input id="pimg1" width="40%" value=""/>
+				<Label text="M.R.P" required="true" />
+					<Input id="mrp1"  width="40%" value=""/>
+				<Label text="Offer Price" required="true"/>
+					<Input id="op1" width="40%" value=""/>
+				<Button text="Save" width="20%" press=".onsaveproduct"/><Button text="Close" width="20%"  press=".onclose3"/>
+			</f:content>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>

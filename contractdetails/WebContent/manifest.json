@@ -1,0 +1,82 @@
+{
+	"sap.app": {
+		"id": "contractdetails",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": false
+		}
+	},
+	"sap.ui5": {
+		"rootView": "contractdetails.views.tileview",
+		"dependencies": {
+			"minUI5Version": "1.30",
+			"libs": {
+				"sap.m": {
+					
+				}
+			}
+		},
+		"models": {
+			"mymodel": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "data/mydata.json"
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "contractdetails.views",
+				"controlId": [
+					"App"
+				],
+				"controlAggregation": "pages"
+			},
+			"routes": [
+			{
+			"pattern":"tileview",
+			"name":"tileview",
+			"target":"tileview"
+			},
+			{
+			"pattern":"contracttable",
+			"name":"contracttable",
+			"target":"contracttable"
+			},
+			{
+			"pattern":"detailpage/{item}",
+			"name":"detailpage",
+			"target":"detailpage"
+			}
+			],
+			"targets": {
+				"tileview":{
+				"viewName":"tileview",
+				"viewType":"XML",
+				"viewId":"view1"
+				},
+				
+				"contracttable":{
+				"viewName":"contracttable",
+				"viewType":"XML",
+				"viewId":"view2"
+				},
+				
+				"detailpage":{
+				"viewName":"detailpage",
+				"viewType":"XML",
+				"viewId":"view3"
+				}
+			}
+		}
+	}
+}

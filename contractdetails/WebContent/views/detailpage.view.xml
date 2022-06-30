@@ -1,0 +1,79 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	xmlns:u="sap.uxap" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:fn="sap.f"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="contractdetails.controllers.detailpage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showNavButton="true" navButtonPress=".goBack">
+		<content>
+			<u:ObjectPageLayout>
+				<u:headerTitle>
+					<u:ObjectPageDynamicHeaderTitle>
+						<u:heading>
+							<Title text="{mymodel>/completedetails/0/num}" />
+						</u:heading>
+					</u:ObjectPageDynamicHeaderTitle>
+				</u:headerTitle>
+				<u:headerContent>
+					<FlexBox wrap="Wrap" fitContainer="true"
+						alignItems="Stretch">
+						<VBox justifyContent="Center" class="sapUiSmallMarginEnd">
+							<Label text="Contract type" />
+							<Text text="{mymodel>/completedetails/0/contractType}" />
+						</VBox>
+						<VBox justifyContent="Center" class="sapUiSmallMarginEnd">
+							<Label text="Guid" />
+							<Text text="{mymodel>/completedetails/0/guid}" />
+						</VBox>
+					</FlexBox>
+				</u:headerContent>
+				<u:sections>
+					<u:ObjectPageSection title="Creation Details">
+						<u:subSections>
+							<u:ObjectPageSubSection>
+								<u:blocks>
+									<f:SimpleForm maxContainerCols="2"
+										editable="false" layout="ResponsiveGridLayout" labelSpanL="12"
+										labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1"
+										columnsM="1">
+										<f:content>
+											<Label text="Created By" />
+											<Text text="{mymodel>/completedetails/0/createdBy}" />
+											<Label text="Created On" />
+											<Text text="{mymodel>/completedetails/0/createdOn}" />
+											<Label text="Created Time" />
+											<Text text="{mymodel>/completedetails/0/createdOnTstmp}" />
+										</f:content>
+									</f:SimpleForm>
+								</u:blocks>
+							</u:ObjectPageSubSection>
+						</u:subSections>
+					</u:ObjectPageSection>
+					<u:ObjectPageSection title="Maintenance">
+						<u:subSections>
+							<u:ObjectPageSubSection>
+								<u:blocks>
+									<f:SimpleForm maxContainerCols="2"
+										editable="false" layout="ResponsiveGridLayout" labelSpanL="12"
+										labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1"
+										columnsM="1">
+										<f:content>
+											<Label text="Date From" />
+											<Text text="{mymodel>/completedetails/0/dateFrom}" />
+											<Label text="Date to" />
+											<Text text="{mymodel>/completedetails/0/dateTo}" />
+											<Label text="Zone" />
+											<Text text="{mymodel>/completedetails/0/zonlo}" />
+										</f:content>
+									</f:SimpleForm>
+								</u:blocks>
+							</u:ObjectPageSubSection>
+						</u:subSections>
+					</u:ObjectPageSection>
+
+				</u:sections>
+			</u:ObjectPageLayout>
+		</content>
+	</Page>
+</core:View>

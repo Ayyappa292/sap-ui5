@@ -1,0 +1,17 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="contractdetails.controllers.tileview"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Welcome to Tile View">
+		<content>
+			<FlexBox height="400px" alignItems="Center"
+				justifyContent="Center">
+				<GenericTile header="Contract Details" press=".onPress">
+					<TileContent footer="Browse All Contracts">
+						<ImageContent src="sap-icon://customer-order-entry" />
+					</TileContent>
+				</GenericTile>
+			</FlexBox>
+		</content>
+	</Page>
+</core:View>

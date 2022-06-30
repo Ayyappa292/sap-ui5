@@ -1,0 +1,48 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:u="sap.uxap"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:fn="sap.f"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="product.controllers.mainview"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true">
+
+	<fn:FlexibleColumnLayout>
+
+	<!-- 	<beginColumnPages>
+		<Page>
+		<content>
+		<Text text="begin"/>
+		</content>
+		</Page>
+		
+
+		</beginColumnPages>
+ -->
+		<midColumnPages>
+					<u:ObjectPageLayout>
+			<Text text="middel"/>
+	</u:ObjectPageLayout>
+		
+		</midColumnPages>
+
+
+
+
+<!-- 
+		<endColumnPages>
+		
+		<content>
+		<Text text="end"/>
+		</content>
+		
+		</endColumnPages>
+		
+ -->
+
+
+	</fn:FlexibleColumnLayout>
+
+
+
+
+
+</mvc:View>

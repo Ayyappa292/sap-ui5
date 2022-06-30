@@ -1,0 +1,53 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="contractdetails.controllers.contracttable"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Contract Table">
+		<content>
+			<Table items="{mymodel>/details}" mode="SingleSelectMaster"
+				itemPress=".onItemPress" showNavButton="true">
+				<columns>
+					<Column>
+						<Text text="num" />
+					</Column>
+					<Column>
+						<Text text="contractType" />
+					</Column>
+					<Column>
+						<Text text="category" />
+					</Column>
+					<Column>
+						<Text text="createdBy" />
+					</Column>
+					<Column>
+						<Text text="createdOn" />
+					</Column>
+					<Column>
+						<Text text="createdOnTstmp" />
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation">
+						<cells>
+							<Text text="{mymodel>num}" />
+							<Text text="{mymodel>contractType}" />
+							<Text text="{mymodel>category}" />
+							<Text text="{mymodel>createdBy}" />
+							<Text text="{mymodel>createdOn}" />
+							<Text text="{mymodel>createdOnTstmp}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+				<footer>
+				<Toolbar>
+					<ToolbarSpacer />
+					<Button text="Add" press="onAdd" type="Accept" icon ="sap-icon://add-document"/>
+					<Button text="Edit" press="onEdit" type="Neutral" icon ="sap-icon://edit"/>
+					<Button text="Delete" press="onDelete" type="Reject" icon="sap-icon://delete"/>
+
+				</Toolbar>
+			</footer>
+	</Page>
+</core:View>

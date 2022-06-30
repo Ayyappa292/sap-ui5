@@ -1,0 +1,75 @@
+{
+	"products": [
+	{
+			"productid": "1",
+			"productname": "Mobile Phone",
+			"productimage":"https://img.myipadbox.com/upload/store/product_l/MPD7854J.jpg",
+			"mrp": "10000",
+			"offerprice": "9000"
+		},
+		{
+			"productid": "2",
+			"productname": "laptop",
+			"productimage": "https://m.media-amazon.com/images/I/71bJqS8ZLTL._AC_SS450_.jpg",
+			"mrp": "50000",
+			"offerprice": "45000"
+		},
+		{
+			"productid": "3",
+			"productname": "Computer",
+			"productimage": "https://blogs.windows.com/wp-content/uploads/prod/sites/2/2022/01/HP-ENVY-Desktop-PC-lifestyle-2-scaled.jpg",
+			"mrp": "60000",
+			"offerprice": "55000"
+		},
+		{
+			"productid": "4",
+			"productname": "tablet",
+			"productimage": "https://www.popsci.com/uploads/2021/03/18/C4DZBNOBBFFP5LQE3MIAMM2QSM.jpg?auto=webp&width=1440&height=810",
+			"mrp": "15000",
+			"offerprice": "14000"
+		},
+		{
+			"productid": "5",
+			"productname": "Intel Processor",
+			"productimage": "https://image.coolblue.nl/840x473/content/a7a4fe8a361ffb302d00b12de2195536",
+			"mrp": "30,000",
+			"offerprice": "28000"
+		}
+	],
+	"users":[
+	{
+	"userid" : "501",
+	"username" : "ayyappa",
+	"validity": "lifetime",
+	"membership" : "diamond"
+	},
+	{
+	"userid" : "502",
+	"username" : "manikanta",
+	"validity": "2022",
+	"membership" : "silver"
+	},
+	{
+	"userid" : "503",
+	"username" : "shiva",
+	"validity": "Aug 2022",
+	"membership" : "gold"
+	},
+	{
+	"userid" : "504",
+	"username" : "likitha",
+	"validity": "2023",
+	"membership" : "gold"
+	},
+	{
+	"userid" : "505",
+	"username" : "alekhya",
+	"validity": "2023",
+	"membership" : "gold"
+	}
+	],
+	"cart":[
+	],
+	"detailproduct":{}
+	
+	}
