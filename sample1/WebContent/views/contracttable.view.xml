@@ -1,0 +1,68 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="sample1.controllers.contracttable"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Contract Table">
+		<content>
+		
+			<Table id="myTable" items="{mymodel>/details}" mode="MultiSelect" itemPress=".onItemPress" >
+			
+				<columns>
+				
+					<Column>
+						<Text text="Student Id" />
+					</Column>
+					<Column>
+						<Text text="Student Name" />
+					</Column>
+					<Column>
+						<Text text="Student Branch" />
+					</Column>
+					<Column>
+						<Text text="D.No" />
+					</Column>
+					<Column>
+						<Text text="Street" />
+					</Column>
+					<Column>
+						<Text text="City" />
+					</Column>
+					<Column>
+						<Text text="State" />
+					</Column>
+					<Column>
+						<Text text="Country" />
+					</Column>
+
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" >
+						<cells>
+							
+							<Text text="{mymodel>id}" />
+							<Text text="{mymodel>name}" />
+							<Text text="{mymodel>branch}" />
+							<Text text="{mymodel>dno}" />
+							<Text text="{mymodel>street}" />
+							<Text text="{mymodel>city}" />
+							<Text text="{mymodel>state}" />
+							<Text text="{mymodel>country}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button text="Add" press="onAdd" type="Accept"
+					icon="sap-icon://add-document" />
+				<Button text="Edit" press="onEdit" type="Neutral"
+					icon="sap-icon://edit" />
+				<Button text="Delete" press="onDelete" type="Reject"
+					icon="sap-icon://delete" />
+
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

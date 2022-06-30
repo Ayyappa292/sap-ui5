@@ -1,0 +1,37 @@
+<core:FragmentDefinition
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	controllerName="sample1.controllers.contracttable"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Dialog title="Please enter Details to Continue">
+		<f:SimpleForm layout="ResponsiveGridLayout" >
+			<f:content>
+				<Label text="Mandt" required="true"/>
+				<Input id ="nmandt" width ="40%" /> 
+				<Label text="Your id" required="true"/>
+				<Input id="nid" width="40%"/>
+				<Label text="Name" required="true"/>
+				<Input id="sname" width="40%" />
+				<Label text="Branch" required="true"/>
+				<Input id="sbranch" width="40%"/>
+				<Label text="dno" required="true"/>
+				<Input id="sdno" width="40%"/>
+				<Label text="Street" required="true"/>
+				<Input id="sstreet" width="40%"/>
+				<Label text="City" required="true"/>
+				<Input id="scity" width="40%"/>
+				<Label text="State" required="true"/>
+				<Input id="sstate" width="40%"/>
+				<Label text="Country" required="true"/>
+				<Input id="scountry" width="40%"/>
+				<VBox>
+				<HBox>
+				<Button text="Submit" press=".onSubmitDetails" />
+				<Button text="Cancel" press=".onCancleDetails" />
+				</HBox>
+				</VBox>
+			</f:content>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>
+

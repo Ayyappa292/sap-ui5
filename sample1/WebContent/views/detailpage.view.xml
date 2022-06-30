@@ -1,0 +1,77 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	xmlns:u="sap.uxap" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:fn="sap.f"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="sample1.controllers.detailpage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page showNavButton="true" navButtonPress=".goBack">
+		<content>
+			<u:ObjectPageLayout>
+				<u:headerTitle>
+					<u:ObjectPageDynamicHeaderTitle>
+						<u:heading>
+							<Title text="{mymodel>/completedetails/id}" />
+						</u:heading>
+					</u:ObjectPageDynamicHeaderTitle>
+				</u:headerTitle>
+				<u:headerContent>
+					<FlexBox wrap="Wrap" fitContainer="true"
+						alignItems="Stretch">
+						<VBox justifyContent="Center" class="sapUiSmallMarginEnd">
+							<Label text="Name" />
+							<Text text="{mymodel>/completedetails/name}" />
+						</VBox>
+						<VBox justifyContent="Center" class="sapUiSmallMarginEnd">
+							<Label text="Branch" />
+							<Text text="{mymodel>/completedetails/branch}" />
+						</VBox>
+					</FlexBox>
+				</u:headerContent>
+				<u:sections>
+					<u:ObjectPageSection title="Address">
+						<u:subSections>
+							<u:ObjectPageSubSection>
+								<u:blocks>
+									<f:SimpleForm maxContainerCols="2"
+										editable="false" layout="ResponsiveGridLayout" labelSpanL="12"
+										labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1"
+										columnsM="1">
+										<f:content>
+											<Label text="D.No" />
+											<Text text="{mymodel>/completedetails/dno}" />
+											<Label text="Street" />
+											<Text text="{mymodel>/completedetails/street}" />
+											<Label text="City" />
+											<Text text="{mymodel>/completedetails/city}" />
+										</f:content>
+									</f:SimpleForm>
+								</u:blocks>
+							</u:ObjectPageSubSection>
+						</u:subSections>
+					</u:ObjectPageSection>
+					<u:ObjectPageSection title="Complete Address">
+						<u:subSections>
+							<u:ObjectPageSubSection>
+								<u:blocks>
+									<f:SimpleForm maxContainerCols="2"
+										editable="false" layout="ResponsiveGridLayout" labelSpanL="12"
+										labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1"
+										columnsM="1">
+										<f:content>
+											<Label text="State" />
+											<Text text="{mymodel>/completedetails/state}" />
+											<Label text="Country" />
+											<Text text="{mymodel>/completedetails/country}" />
+										</f:content>
+									</f:SimpleForm>
+								</u:blocks>
+							</u:ObjectPageSubSection>
+						</u:subSections>
+					</u:ObjectPageSection>
+
+				</u:sections>
+			</u:ObjectPageLayout>
+		</content>
+	</Page>
+</core:View>
